@@ -1,0 +1,26 @@
+{
+  "name": "genteditoscana",
+  "version": "1.0.0",
+  "description": "website for a community dance group",
+  "main": "main.js",
+  "scripts": {
+    "test": "start-html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trust96/GenteDiToscana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trust96/GenteDiToscana/issues"
+  },
+  "homepage": "https://github.com/trust96/GenteDiToscana#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  },
+  "devDependencies": {
+    "@barba/core": "^2.9.7",
+    "bootstrap": "^4.5.3"
+  }
+}

@@ -1,0 +1,95 @@
+/*========================================================
+                         GENERAL
+==========================================================*/
+
+
+/*=========================================================
+                        PRIMARY
+*/
+
+$color-primary:$primary-400;
+
+$color-primary-dark:$primary-500;
+$color-primary-light:$primary-300;
+$color-primary-bg:$primary-200;
+/*=========================================================
+                        SECONDARY
+*/
+
+/*=========================================================
+                        ACCENT
+*/
+
+$color-accent:$accent-400;
+
+$color-accent-dark:$accent-500;
+$color-accent-light:$accent-300;
+$color-accent-bg:$accent-200;
+/*========================================================
+                         FEEDBACK
+==========================================================*/
+
+
+$color-success: $success-400; //green
+$color-danger: $danger-400; //red
+$color-warining: $warning-400; //yellow
+/*========================================================
+                         DEFAULT
+==========================================================*/
+
+
+$body-color-bg :$white;
+$module-color-bg:$color-accent-bg;
+/*=========================================================
+                        TYPOGRAPHY
+*/
+
+/*Text*/
+$text-color:$gray-900;
+$text-color-title:$black;
+$text-color-subtle:$gray-500;
+$text-color-inverse:$white;
+$text-color-accent:$color-primary;
+/*Link*/
+$link-color:$color-primary;
+$link-color-visited:$color-primary-dark;
+$selection-color: $accent-400;
+
+/*=========================================================
+                        BUTTON
+*/
+
+$button-accent-bg: $color-accent;
+$button-accent-hover: $color-accent-light;
+$button-accent-active: $color-accent-dark;
+$button-accent-text: $text-color-inverse;
+
+$button-subtle-accent-bg: $transparent;
+$button-subtle-accent-active: $gray-200;
+$button-subtle-accent-hover: $white;
+$button-subtle-accent-text: $color-accent;
+
+
+$button-primary-bg: $color-primary;
+$button-primary-hover: $color-primary-light;
+$button-primary-active: $color-primary-dark;
+$button-primary-text: $text-color;
+
+
+$button-subtle-primary-bg: $transparent;
+$button-subtle-primary-hover: $white;
+$button-subtle-primary-active: $gray-200;
+$button-subtle-primary-text: $text-color;
+/*=========================================================
+                        FORM
+*/
+
+// $form-border-color:$border-color;
+// $form-border-focus-color:$color-accent;
+// $form-border-error-color:$warning-color;
+// $form-bg-color:$accent-color-bg;
+// $form-text-placeholder-color:$gray-04;
+
+/*=========================================================
+                        BORDER
+*/

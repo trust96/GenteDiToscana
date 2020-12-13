@@ -1,0 +1,111 @@
+
+/*========================================================
+                         BUTTON
+==========================================================*/
+
+
+.button{
+    padding: $space-200 $space-400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor:pointer;
+    font-weight: $font-weight-light;
+    border-radius: $border-radius;
+    font-size: $font-size-700;
+    line-height:$line-height-sm;
+}
+/*=========================================================
+                        PRIMARY
+*/
+
+.button--primary{
+    border: solid $button-primary-bg $border-line;
+    background-color: $button-primary-bg;
+    color:$button-primary-text;
+&:hover{
+    background-color: $button-primary-hover;
+    border: solid $button-primary-hover $border-line;
+}
+&:active{
+    background-color: $button-primary-active;
+    border: solid $button-primary-active $border-line; 
+}
+&:focus{
+    box-shadow: 0 0 0px 3px $white,
+     0 0 0px 4px $color-primary;
+    outline:none !important;
+}
+}
+/*=========================================================
+                        SECONDARY
+*/
+
+.button--subtle-primary{
+    border: solid $button-primary-bg $border-line;
+    background-color: $button-subtle-primary-bg;
+    color:$button-subtle-primary-text;
+&:hover{
+    background-color: $button-subtle-primary-hover;
+    border: solid $button-primary-bg $border-line;
+}
+&:active{
+    background-color: $button-subtle-primary-active;
+    border: solid $button-primary-bg $border-line; 
+}
+&:focus{
+    box-shadow: 0 0 0px 3px $white,
+     0 0 0px 4px $color-primary;
+    outline:none !important;
+}
+}
+/*=========================================================
+                        ACCENT
+*/
+
+.button--accent{
+    border: solid $button-accent-bg $border-line;
+    background-color: $button-accent-bg;
+    color:$button-accent-text;
+&:hover{
+    background-color: $button-accent-hover;
+    border: solid $button-accent-hover $border-line;
+}
+&:active{
+    background-color: $button-accent-active;
+    border: solid $button-accent-active $border-line; 
+}
+&:focus{
+    box-shadow: 0 0 0px 3px $white,
+     0 0 0px 4px $color-accent;
+    outline:none !important;
+}
+}
+
+
+.button--subtle-accent{
+    border: solid $button-accent-bg $border-line;
+    background-color: $button-subtle-accent-bg;
+    color:$button-subtle-accent-text;
+&:hover{
+    background-color: $button-subtle-accent-hover;
+    border: solid $button-accent-bg $border-line;
+}
+&:active{
+    background-color: $button-subtle-accent-active;
+    border: solid $button-accent-bg $border-line; 
+}
+&:focus{
+    box-shadow: 0 0 0px 3px $white,
+     0 0 0px 4px $color-accent;
+    outline:none !important;
+}
+}
+/*=========================================================
+                        UTILITIES
+*/
+
+.button--group{
+    
+}
+

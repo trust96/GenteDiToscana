@@ -1,0 +1,102 @@
+/*========================================================
+                         HEADINGS
+==========================================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/*=========================================================
+                        TITLE
+*/
+
+// Usage: for subtitle use 2 titles down
+.title {
+  font-family: $font-secondary;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+  margin: 0 0 $space-300;
+}
+.sub-title{
+    color: $text-color-subtle;
+    font-family: $font-secondary;
+}
+.title--empty {
+  font-size: $font-size-100;
+  color:$text-color-subtle;
+}
+
+.title--primary {
+  font-size: $font-size-200;
+}
+
+.title--secondary {
+  font-size: $font-size-300;
+}
+.title--terziary {
+  font-size: $font-size-500;
+}
+
+.title--quartenary {
+  font-size: $font-size-800;
+}
+
+.section__title{
+color:$color-accent;
+}
+/*========================================================
+                         PARAGRAPHS
+==========================================================*/
+
+
+p {
+  margin: 0;
+}
+/*=========================================================
+                        TEXT
+*/
+
+.text{
+    color: $text-color;
+    font-weight: $font-weight-light;
+    &:not(:last-child){
+      margin: 0 0 $space-300;
+  
+    }
+}
+.sub-text{
+    color: $text-color-subtle;
+}
+.text--primary{
+    font-size: $font-size-700;
+}
+
+.text--secondary{
+    font-size: $font-size-800
+}
+/*========================================================
+                         OTHERS
+==========================================================*/
+
+
+/*=========================================================
+                        CAPTION
+*/
+
+.caption{
+    font-size: $font-size-800;
+    font-style: italic;
+}
+/*=========================================================
+                        OVERLINE
+*/
+
+.overline{
+    font-size: $font-size-900;
+    text-transform: uppercase;
+    margin-bottom: $space-100;
+    text-align:center;
+}

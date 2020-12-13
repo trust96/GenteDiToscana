@@ -1,0 +1,85 @@
+/*========================================================
+                         
+==========================================================*/
+html {
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: $line-height-lg;
+  background-color: $body-color-bg;
+  color: $text-color;
+  text-align: left;
+  font-family: $font-primary;
+  font-size: $font-base;
+  font-weight: $font-weight-light;
+}
+
+*::before,
+*::after ,*{
+  box-sizing: border-box;
+}
+
+/*========================================================
+                         ICON
+==========================================================*/
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon{
+  line-height: $line-height-sm;
+}
+.icon__group{
+}
+/*========================================================
+                         LINK
+==========================================================*/
+.link{
+  color:$link-color;
+  text-decoration: solid $space-fixed-100 underline $link-color;
+  &:hover{
+    background-color: $selection-color;
+    color:$link-color-visited
+  }
+  &:active{
+    background-color: $selection-color;
+    text-decoration-color: $color-primary-dark;
+  }
+  &:visited{
+    color: $link-color-visited;
+    text-decoration: solid $space-fixed-100 underline $link-color-visited;
+  }
+}
+/*========================================================
+                         IMAGE
+==========================================================*/
+
+.img-rsp{
+  max-width: 100%;
+  height:auto;
+}
+/*========================================================
+                         OTHERS
+==========================================================*/
+
+.seperator{
+  width:80%;
+}
+
+.only-lg-screen{
+  display:none;
+  @include media-breakpoint-up(lg){
+    display:block;
+  }
+}
+
