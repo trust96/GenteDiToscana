@@ -1,0 +1,51 @@
+header{
+    padding-top:100px;
+
+}
+.header{
+    min-height: 430px;
+    padding-top: 52px;
+    @include  media-breakpoint-down(sm){
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../../src/Assets/Logo-xlarge.svg');
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+    }
+}
+.header__title{
+    margin-bottom: 12px;
+}
+.header__text{
+    margin-bottom: 32px;
+}
+@include  media-breakpoint-down(sm){
+    .button-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-group .button{
+        width:80%;
+        margin-bottom: 12px;
+        padding: 1rem 0;
+        border-radius: 52px;
+    }
+}
+@include  media-breakpoint-up(md){
+    .button-group{
+        display:flex;
+    }
+    .button-group .button{
+        &:not(:last-of-type){
+            margin-right:16px;
+        }
+    }
+
+}
+
+
+
+.header__image{
+    justify-content: center;
+}

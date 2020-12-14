@@ -19,29 +19,84 @@ h6 {
   font-weight: $font-weight-bold;
   line-height: $line-height-sm;
   margin: 0 0 $space-300;
+  @include  media-breakpoint-up(md){
+    margin: 0 0 $space-400;
+  }
+  @include  media-breakpoint-up(lg){
+    margin: 0 0 $space-500;
+  }
 }
 .sub-title{
     color: $text-color-subtle;
     font-family: $font-secondary;
+    font-size: $font-size-700;
+    @include  media-breakpoint-up(md){
+      font-size: $font-size-600;
+
+    }
+    @include  media-breakpoint-up(lg){
+      font-size: $font-size-500;
+
+    }
 }
 .title--empty {
   font-size: $font-size-100;
   color:$text-color-subtle;
+  @include  media-breakpoint-up(md){
+    font-size: 48px;
+
+  }
+  @include  media-breakpoint-up(lg){
+    font-size: 52px;
+
+  }
 }
 
 .title--primary {
   font-size: $font-size-200;
+  @include  media-breakpoint-up(md){
+    font-size: $font-size-100;
+
+  }
+  @include  media-breakpoint-up(lg){
+    font-size: 48px;
+
+  }
 }
 
 .title--secondary {
   font-size: $font-size-300;
+  @include  media-breakpoint-up(md){
+    font-size: $font-size-200;
+
+  }
+  @include  media-breakpoint-up(lg){
+    font-size: $font-size-100;
+
+  }
 }
 .title--terziary {
   font-size: $font-size-500;
+  @include  media-breakpoint-up(md){
+    font-size: $font-size-400;
+
+  }
+  @include  media-breakpoint-up(lg){
+    font-size: $font-size-300;
+
+  }
 }
 
 .title--quartenary {
   font-size: $font-size-800;
+  @include  media-breakpoint-up(md){
+    font-size: $font-size-700;
+
+  }
+  @include  media-breakpoint-up(lg){
+    font-size: $font-size-600;
+
+  }
 }
 
 .section__title{
@@ -66,16 +121,44 @@ p {
       margin: 0 0 $space-300;
   
     }
+    @include  media-breakpoint-up(md){
+      &:not(:last-child){
+        margin: 0 0 $space-400;
+    
+      }
+    }
+    @include  media-breakpoint-up(lg){
+      &:not(:last-child){
+        margin: 0 0 $space-500;
+    
+      }
+    }
 }
 .sub-text{
     color: $text-color-subtle;
 }
 .text--primary{
     font-size: $font-size-700;
+    @include  media-breakpoint-up(md){
+      font-size: $font-size-600;
+
+    }
+    @include  media-breakpoint-up(lg){
+      font-size: $font-size-500;
+
+    }
 }
 
 .text--secondary{
-    font-size: $font-size-800
+    font-size: $font-size-800;
+    @include  media-breakpoint-up(md){
+      font-size: $font-size-700;
+
+    }
+    @include  media-breakpoint-up(lg){
+      font-size: $font-size-600;
+
+    }
 }
 /*========================================================
                          OTHERS
@@ -89,6 +172,14 @@ p {
 .caption{
     font-size: $font-size-800;
     font-style: italic;
+    @include  media-breakpoint-up(md){
+      font-size: $font-size-700;
+
+    }
+    @include  media-breakpoint-up(lg){
+      font-size: $font-size-600;
+
+    }
 }
 /*=========================================================
                         OVERLINE
@@ -99,4 +190,23 @@ p {
     text-transform: uppercase;
     margin-bottom: $space-100;
     text-align:center;
+    @include  media-breakpoint-up(md){
+      font-size: $font-size-800;
+
+    }
+    @include  media-breakpoint-up(lg){
+      font-size: $font-size-700;
+
+    }
+}
+.small{
+  font-size: $font-size-900;
+  @include  media-breakpoint-up(md){
+    font-size: $font-size-800;
+
+  }
+  @include  media-breakpoint-up(lg){
+    font-size: $font-size-700;
+
+  }
 }

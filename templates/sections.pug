@@ -1,0 +1,114 @@
+include mixins
+mixin navBar
+    section.nav__bar
+        img.img-rsp.nav__logo(src="../src/assets/Logo-medium.svg")
+        +navList
+        button.button.button--subtle-primary.nav__button Book us
+        +navFooter
+mixin navBarLg
+    section.nav__bar-lg
+        +navList
+        button.button.button--subtle-primary.nav__button Book us
+
+mixin nav
+    section.navigation
+        .container-fluid
+            div.nav
+                img.img-rsp(src="../src/assets/Logo-small.svg")
+                +navBar
+                +menu
+            .nav-lg.only-lg-screen-flex
+                img.nav__logo-lg.img-rsp(src="../src/assets/Logo-medium.svg")
+                +navBarLg
+
+
+mixin header
+    section.header.container-fluid
+        .row
+            .header__content.col-lg-6
+                +title
+                +buttonGroup
+            +headerImage
+
+
+mixin footer
+    section.footer.container-fluid
+        .row
+            +footerInfo
+            +footerNav
+
+mixin ourMission
+    section.container-fluid
+        +missionTitle
+        +missionParagraph
+
+mixin ourOffer (boh)
+    section.container
+        +offerTitle
+        .row.justify-content-center
+            .card
+                .card__head
+                    h3.card__title.title.title--terziary Teach
+                    i.fas.fa-running.card__icon
+                .card__body
+                    +offerText(`We give from private lesson, to
+                                workshop.
+                                we have a strategic approach to our
+                                method, starting from music theory
+                                to avanced skills that you see on
+                                youtube`
+                            )
+                button.card__button.button.button--primary Learn more
+
+
+            .card
+                .card__head
+                    h3.card__title.title.title--terziary Show
+                    i.fas.fa-theater-masks.card__icon
+                .card__body
+                    +offerText(`we like to express ourselve, and the
+                                best way to do so is through a
+                                stage. we mostly do il for fun and
+                                for free, if there is no load of work in
+                                creating a choreography.
+
+                                On request we can express what
+                                you have in mind in pure Art`
+                            )
+                button.card__button.button.button--primary Learn more
+
+
+            .card.no-margin-bottom
+                .card__head
+                    h3.card__title.title.title--terziary Branding
+                    i.fas.fa-user-check.card__icon
+                .card__body
+                    +offerText(`This is our principal concern. We
+                                believe that every dancer should be
+                                financially indipendent, that is why
+                                strive to create a brand that suits
+                                each dancer.
+
+                                From customize products (wears) to
+                                a personal website, to organize
+                                shecdules and attract clients`
+                            )
+                button.card__button.button.button--primary Learn more
+
+
+            .card.no-margin-bottom
+                .card__head
+                    h3.card__title.title.title--terziary Consulent
+                    i.fas.fa-hands-helping.card__icon
+                .card__body
+                    +offerText(`
+                                We love sharing what we are good
+                                at. As said before each cinghiale
+                                has thier own specialities. So if you
+                                feel stuck in your learning journey
+                                and what some help, inspiration or
+                                whatsoever, feel free to contact us`
+                            )
+                button.card__button.button.button--primary Learn more
+
+        

@@ -1,0 +1,25 @@
+.unstyled-list{
+    list-style: none;
+    padding:0;
+}
+
+.unstyled-link{
+    text-decoration: none;
+    color:inherit;
+}
+
+.only-lg-screen{
+    display:none;
+    @include media-breakpoint-up(lg){
+      display:block;
+    }
+  }
+  .only-lg-screen-flex{
+    display:none;
+    @include media-breakpoint-up(lg){
+      display:flex;
+    }
+  }
+  .no-margin-bottom{
+    margin-bottom:0;
+  }

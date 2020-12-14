@@ -13,7 +13,9 @@
 @import 
 '../../node_modules/bootstrap/scss/functions',
 '../../node_modules/bootstrap/scss/variables',
-'../../node_modules/bootstrap/scss/mixins';
+'../../node_modules/bootstrap/scss/mixins',
+'../../node_modules/bootstrap/scss/grid',
+'../../node_modules/rfs/scss.scss';
 
 /*========================================================
                          ABSTRACT 
@@ -31,7 +33,8 @@
 @import
 'components/button',
 'components/link',
-'components/scrollbar';
+'components/scrollbar',
+'components/icon';
 
 /*========================================================
                          MODULES
@@ -39,23 +42,27 @@
 @import
 'modules/accordion',
 'modules/form',
-'modules/tabs';
+'modules/tabs',
+'modules/menu';
 /*========================================================
                          LAYOUT
 ==========================================================*/
 @import 
 'layout/grid',
 'layout/navigation',
-'layout/footer';
+'layout/footer',
+'layout/header';
 
 
 
 /*========================================================
                          TEMPLATE 
 ==========================================================*/
-
+@import
+'template/homepage';
 /*========================================================
                          OTHERS
 ==========================================================*/
-
+@import
+'miscellaneous/utilities'
 

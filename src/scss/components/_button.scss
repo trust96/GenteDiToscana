@@ -8,12 +8,19 @@
     padding: $space-200 $space-400;
     display: flex;
     align-items: center;
+    justify-content: center;
     white-space: nowrap;
     cursor:pointer;
     font-weight: $font-weight-light;
     border-radius: $border-radius;
     font-size: $font-size-700;
     line-height:$line-height-sm;
+    background-color: $transparent;
+@include  media-breakpoint-up(md){
+
+    font-size: $font-size-600;
+    padding: $space-300 $space-500;
+}
 }
 /*=========================================================
                         PRIMARY

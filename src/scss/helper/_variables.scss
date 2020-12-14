@@ -90,6 +90,8 @@ $space-400:1.25 * $space-unit; //20px
 $space-500:2 * $space-unit; //32px
 $space-600:3.25 * $space-unit; //52px
 $space-700:5.25 * $space-unit; //84px
+$space-800:8.50 * $space-unit;
+$space-900: 13.75 * $space-unit;
 /*=========================================================
                         FIXED SPACING
 */
@@ -118,15 +120,15 @@ $font-secondary : 'Karla', sans-serif;
 
 $font-base: 1rem;
 
-$font-size-900: 0.5 * $font-base; //8px
-$font-size-800: 0.75 * $font-base; //12px
+$font-size-900: 0.75 * $font-base; //8px
+$font-size-800: 0.875 * $font-base; //12px
 $font-size-700: 1 * $font-base; //16px
 $font-size-600: 1.25 * $font-base; //20px
 $font-size-500: 1.5 * $font-base;//24px
 $font-size-400: 1.75 * $font-base;//28px
 $font-size-300: 2 * $font-base;//32px
 $font-size-200: 2.25 * $font-base; //36px
-$font-size-100: 2.25 * $font-base; //40px
+$font-size-100: 2.5 * $font-base; //40px
 /*=========================================================
                         FONT-WEIGHT
 */

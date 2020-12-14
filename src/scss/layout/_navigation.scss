@@ -1,0 +1,106 @@
+.navigation{
+    position:fixed;
+    background-color: rgba($white, .95);
+    z-index:10;
+    left: 0;
+right: 0;
+top: 0;
+}
+
+
+.nav{
+display:flex;
+justify-content: space-between;
+padding: 20px 0;
+
+@include  media-breakpoint-up(lg){
+    display:none;
+}
+
+}
+.nav__bar{
+    padding-top: 20px;
+    background-color: $white;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+
+}
+.nav__logo{
+    margin:0 0 20px 20px;
+}
+.nav__bar .nav__list{
+    margin: 0 0 32px;
+    padding: 0 20px 0;
+    @include  media-breakpoint-up(md){
+        margin: 0 0 52px;
+        padding: 0 32px 0;
+    }
+}
+.nav__bar .nav__item{
+    display:flex;
+}
+.nav__bar .nav__link{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: $border-line solid $text-color-subtle;
+    @include  media-breakpoint-up(md){
+        padding: 20px 0;
+        font-size:$font-size-600;
+
+    }
+}
+
+.nav__bar .nav__button{
+    margin: 0 auto 20px;
+    width:80%;
+    max-width: 400px;
+    @include  media-breakpoint-up(md){
+        margin-bottom:32px;
+    
+    }
+}
+
+.nav__footer-social{
+display:flex;
+justify-content: space-around;
+margin-bottom:12px;
+@include  media-breakpoint-up(md){
+    margin-bottom:20px;
+
+}
+}
+.nav__footer-copyright{
+    display:flex;
+    justify-content: center;
+    background-color: $color-primary-dark;
+    color:$text-color-inverse;
+}
+.nav-lg{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 12px 0;
+}
+.nav__bar-lg{
+    display:flex;
+}
+.nav__bar-lg .nav__list{
+display: flex;
+margin:0 52px 0 0;
+}
+.nav__bar-lg .nav__item{
+    &:not(:last-of-type){
+        margin-right: 32px;
+    }
+}
+.nav__bar-lg .nav__link{
+    flex-basis: 100%;
+}
+.nav__bar-lg .nav__button{
+    
+}

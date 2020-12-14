@@ -1,0 +1,32 @@
+.menu{
+    height:52px;
+    border: 4px solid $black;
+    border-radius: 0px;
+    padding: 8px;
+    position: relative;
+    &:hover{
+        border: 4px solid $color-primary;
+    }
+    &:active{
+        border: 4px solid $color-primary-dark;
+ 
+    }
+    &:focus{
+        outline:none !important;
+        box-shadow: 
+        0 0 0px 4px $white;        
+    }
+
+}
+.menu__content{
+    margin-right: 4px;
+}
+.menu__item{
+    height:4px;
+    width:32px;
+    background-color: $black;
+    &:not(:last-of-type){
+        margin-bottom: 4px;
+    }
+}
+

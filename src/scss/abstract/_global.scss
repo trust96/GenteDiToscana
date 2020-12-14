@@ -76,10 +76,27 @@ body {
   width:80%;
 }
 
-.only-lg-screen{
-  display:none;
-  @include media-breakpoint-up(lg){
-    display:block;
+
+.container-fluid{
+  padding-right:20px;
+  padding-left:20px;
+  @include  media-breakpoint-up(md){
+    padding-right:32px;
+    padding-left:32px;
+  }
+  @include  media-breakpoint-up(md){
+    padding-right:54px;
+    padding-left:54px;
   }
 }
+small{
+  font-size: $font-size-900;
+}
+/* against white space*/
+img{
+  display:block;
+}
 
+li{
+  font-size: 0;
+}

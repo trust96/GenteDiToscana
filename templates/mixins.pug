@@ -1,0 +1,129 @@
+//-
+    NAVIGATION START
+mixin menu
+    button.button.menu
+        .menu__content
+            .menu__item
+            .menu__item
+            .menu__item
+        span.menu__text MENU
+
+mixin navItem(itemName)
+    li.nav__item
+        a.unstyled-link.nav__link.text.text--primary(href="#")= itemName
+
+mixin navList
+    ul.nav__list.unstyled-list
+        +navItem('home')
+        +navItem('i cinghiali')
+        +navItem('services')
+        +navItem('contact us')
+
+
+mixin footerSocial
+    .nav__footer-social
+        i.icon-footer.fab.fa-facebook-f
+        i.icon-footer.fab.fa-instagram
+        i.icon-footer.fab.fa-youtube
+
+mixin footerCopyright
+    .nav__footer-copyright
+        i.icon-copyright.far.fa-copyright
+        small 2020 Gente di toscana. All rights reserved
+
+mixin navFooter
+    .nav__footer
+        +footerSocial
+        +footerCopyright
+
+//-
+    NAVIGATION END
+
+
+
+//-
+    FOOTER
+mixin footerInfo
+    .footer__contact.col-md-6
+        img.img-rsp.footer__logo(src="../src/assets/Logo-large.svg")
+        .footer__info
+            .footer__email
+                h4.title.title--quartenary Email 
+                a.small.unstyled-link(href="mailto:genteditoscana@gmail.com") genteditoscana@gmail.com
+            .footer__number
+                h4.title.title--quartenary Telephone
+                a.small.unstyled-link(href="tel:+39 334 338 45 09") +39 334 338 45 09
+        .footer__icon
+            i.icon-footer.fab.fa-facebook-f
+            i.icon-footer.fab.fa-instagram
+            i.icon-footer.fab.fa-youtube
+
+mixin footerNav
+    .footer__nav
+        h4.title.title--quartenary QUICK LINKS
+        ul.unstyled-list.footer__list
+            li.footer__item
+                a.footer__link.unstyled-link.small home
+            li.footer__item
+                a.footer__link.unstyled-link.small i cinghiali
+            li.footer__item
+                a.footer__link.unstyled-link.small services
+            li.footer__item
+                a.footer__link.unstyled-link.small contact us
+mixin footerCopy
+    .footer__copyright
+        i.icon-copyright.far.fa-copyright
+        small 2020 Gente di toscana. All rights reserved
+//-
+    END FOOTER
+
+//-
+    HEADER
+
+mixin buttonGroup
+    .button-group
+        button.button--subtle-accent.button.header__button Learn more
+        button.button.button--accent.header__button Book us
+mixin title
+    h1.header__title.title.title--primary.
+        we dance for fun, we teach to learn
+    p.header__text.title.sub-title.
+        we are a dance comminuty, that strive to make
+        dancers full professionals, without fear on
+        been left out in the modern world
+
+mixin headerImage
+    .header__image.only-lg-screen-flex.col-lg-6
+        include Logo-xlarge.svg
+
+
+//-
+    END HEADER
+
+//-
+    OUR MISSION
+mixin missionParagraph
+    p.text.text--primary.
+        we are an italian, or more precisely a toscana
+        based dance community group. 
+        Each member, or how we like to call ourselves
+        “cinghiali” are dancers, students, full-time workers
+        who love dance but have to come in terms with
+        reality that you can’t yet make a living from it.
+    p.text.text--primary.
+        the reason why we created this cooperative group
+        to make dancers professionals, creating for them a
+        brand, on which they can build buisnesses to live
+        only from thier passion
+mixin missionTitle
+    .title--box.our-mission__title
+        h5.title.overline a bit about
+        h2.title.title--secondary our mission
+
+mixin offerTitle
+    .title--box.our-offer__title
+        h5.title.overline let's look at
+        h2.title.title--secondary our offer
+mixin offerText(texts)
+    p.text.text--secondary.our-offer__text= texts
+    
