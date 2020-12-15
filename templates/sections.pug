@@ -1,7 +1,7 @@
 include mixins
 mixin navBar
     section.nav__bar
-        img.img-rsp.nav__logo(src="assets/Logo-medium.svg")
+        img.img-rsp.nav__logo(src="/assets/Logo-medium.svg")
         +navList
         button.button.button--subtle-primary.nav__button Book us
         +navFooter
@@ -14,11 +14,11 @@ mixin nav
     section.navigation
         .container-fluid
             div.nav
-                img.img-rsp(src="assets/Logo-small.svg")
+                img.img-rsp(src="/assets/Logo-small.svg")
                 +navBar
                 +menu
             .nav-lg.only-lg-screen-flex
-                img.nav__logo-lg.img-rsp(src="assets/Logo-medium.svg")
+                img.nav__logo-lg.img-rsp(src="/assets/Logo-medium.svg")
                 +navBarLg
 
 
