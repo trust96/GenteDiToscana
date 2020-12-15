@@ -6,7 +6,7 @@ header{
     min-height: 430px;
     padding-top: 52px;
     @include  media-breakpoint-down(sm){
-        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../../src/Assets/Logo-xlarge.svg');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('Assets/Logo-xlarge.svg');
         background-size:     cover;                      /* <------ */
         background-repeat:   no-repeat;
         background-position: center center;
